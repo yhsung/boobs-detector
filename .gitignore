@@ -1,0 +1,12 @@
+/build
+/out
+/bin
+
+/*.iml
+/*.log
+/*.sh
+/.settings
+/.classpath
+/.project
+/.idea
+
