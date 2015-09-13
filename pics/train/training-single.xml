@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>Training boobs</name>
+<images>
+  <image file='08670.jpg'>
+    <box left='69' top='331' width='105' height='132'/>
+    <box left='163' top='331' width='108' height='138'/>
+  </image>
+  <image file='08673.jpg'>
+    <box left='204' top='133' width='48' height='48'/>
+    <box left='256' top='122' width='50' height='48'/>
+  </image>
+  <image file='08679.jpg'>
+    <box left='149' top='255' width='79' height='66'/>
+    <box left='210' top='237' width='75' height='72'/>
+  </image>
+  <image file='08680.jpg'>
+    <box left='115' top='161' width='61' height='54'/>
+    <box left='169' top='161' width='43' height='49'/>
+  </image>
+  <image file='08692.jpg'>
+    <box left='80' top='187' width='69' height='72'/>
+    <box left='143' top='210' width='63' height='57'/>
+  </image>
+  <image file='08701.jpg'>
+    <box left='128' top='162' width='68' height='64'/>
+    <box left='195' top='158' width='81' height='62'/>
+  </image>
+  <image file='08705.jpg'>
+    <box left='82' top='194' width='88' height='86'/>
+    <box left='167' top='200' width='85' height='81'/>
+  </image>
+  <image file='08824.jpg'>
+    <box left='84' top='163' width='104' height='100'/>
+    <box left='189' top='165' width='73' height='96'/>
+  </image>
+  <image file='08827.jpg'>
+    <box left='77' top='204' width='62' height='63'/>
+    <box left='141' top='206' width='73' height='69'/>
+  </image>
+  <image file='08828.jpg'>
+    <box left='139' top='182' width='64' height='65'/>
+    <box left='204' top='180' width='53' height='59'/>
+  </image>
+  <image file='08835.jpg'>
+    <box left='76' top='184' width='75' height='74'/>
+    <box left='150' top='182' width='84' height='87'/>
+  </image>
+  <image file='08840.jpg'>
+    <box left='132' top='190' width='37' height='36'/>
+    <box left='170' top='190' width='35' height='35'/>
+  </image>
+  <image file='08847.jpg'>
+    <box left='69' top='175' width='69' height='67'/>
+    <box left='144' top='172' width='71' height='71'/>
+  </image>
+  <image file='08849.jpg'>
+    <box left='97' top='251' width='100' height='96'/>
+    <box left='192' top='242' width='76' height='89'/>
+  </image>
+  <image file='08850.jpg'>
+    <box left='111' top='150' width='65' height='67'/>
+    <box left='177' top='151' width='60' height='62'/>
+  </image>
+  <image file='08859.jpg'>
+    <box left='100' top='192' width='62' height='60'/>
+    <box left='171' top='191' width='62' height='63'/>
+  </image>
+  <image file='08862.jpg'>
+    <box left='93' top='192' width='63' height='65'/>
+    <box left='165' top='192' width='65' height='64'/>
+  </image>
+  <image file='08865.jpg'>
+    <box left='65' top='176' width='58' height='57'/>
+    <box left='136' top='177' width='61' height='59'/>
+  </image>
+  <image file='08868.jpg'>
+    <box left='77' top='198' width='58' height='73'/>
+    <box left='132' top='199' width='65' height='72'/>
+  </image>
+  <image file='08870.jpg'>
+    <box left='65' top='152' width='66' height='79'/>
+    <box left='131' top='148' width='92' height='82'/>
+  </image>
+  <image file='08876.jpg'>
+    <box left='86' top='180' width='69' height='65'/>
+    <box left='154' top='180' width='66' height='63'/>
+  </image>
+  <image file='08877.jpg'>
+    <box left='78' top='128' width='40' height='41'/>
+    <box left='117' top='131' width='39' height='38'/>
+  </image>
+  <image file='09162.jpg'>
+    <box left='72' top='162' width='55' height='58'/>
+    <box left='125' top='163' width='62' height='57'/>
+  </image>
+  <image file='09163.jpg'>
+    <box left='101' top='184' width='63' height='62'/>
+    <box left='162' top='183' width='83' height='76'/>
+  </image>
+  <image file='09178.jpg'>
+    <box left='84' top='297' width='87' height='90'/>
+    <box left='160' top='280' width='76' height='95'/>
+  </image>
+  <image file='09182.jpg'>
+    <box left='129' top='201' width='71' height='68'/>
+    <box left='204' top='192' width='66' height='69'/>
+  </image>
+  <image file='09189.jpg'>
+    <box left='116' top='178' width='53' height='52'/>
+    <box left='168' top='177' width='53' height='52'/>
+  </image>
+  <image file='09202.jpg'>
+    <box left='305' top='145' width='35' height='33'/>
+    <box left='339' top='145' width='29' height='27'/>
+  </image>
+  <image file='09205.jpg'>
+    <box left='170' top='147' width='45' height='42'/>
+    <box left='212' top='148' width='35' height='38'/>
+  </image>
+  <image file='09208.jpg'>
+    <box left='125' top='166' width='50' height='47'/>
+    <box left='180' top='164' width='46' height='43'/>
+  </image>
+  <image file='09215.jpg'>
+    <box left='34' top='154' width='71' height='63'/>
+    <box left='108' top='152' width='81' height='72'/>
+  </image>
+  <image file='09219.jpg'>
+    <box left='57' top='245' width='110' height='101'/>
+    <box left='166' top='237' width='79' height='89'/>
+  </image>
+  <image file='09226.jpg'>
+    <box left='140' top='170' width='37' height='35'/>
+    <box left='179' top='171' width='28' height='32'/>
+  </image>
+  <image file='09231.jpg'>
+    <box left='84' top='202' width='82' height='81'/>
+    <box left='162' top='197' width='81' height='82'/>
+  </image>
+  <image file='09236.jpg'>
+    <box left='106' top='166' width='46' height='50'/>
+    <box left='159' top='161' width='47' height='45'/>
+  </image>
+  <image file='09253.jpg'>
+    <box left='108' top='174' width='60' height='60'/>
+    <box left='169' top='169' width='65' height='64'/>
+  </image>
+  <image file='09267.jpg'>
+    <box left='73' top='151' width='53' height='53'/>
+    <box left='128' top='151' width='58' height='57'/>
+  </image>
+  <image file='09278.jpg'>
+    <box left='113' top='176' width='44' height='41'/>
+    <box left='156' top='162' width='43' height='44'/>
+  </image>
+  <image file='09281.jpg'>
+    <box left='86' top='196' width='42' height='40'/>
+    <box left='133' top='198' width='40' height='41'/>
+  </image>
+  <image file='09442.jpg'>
+    <box left='87' top='182' width='81' height='82'/>
+    <box left='172' top='179' width='81' height='80'/>
+  </image>
+  <image file='09459.jpg'>
+    <box left='154' top='149' width='59' height='55'/>
+    <box left='216' top='146' width='59' height='61'/>
+  </image>
+  <image file='09478.jpg'>
+    <box left='227' top='150' width='44' height='43'/>
+    <box left='275' top='148' width='41' height='40'/>
+  </image>
+  <image file='09480.jpg'>
+    <box left='130' top='84' width='49' height='50'/>
+    <box left='178' top='82' width='44' height='46'/>
+  </image>
+  <image file='09500.jpg'>
+    <box left='75' top='110' width='39' height='40'/>
+    <box left='116' top='104' width='40' height='40'/>
+  </image>
+  <image file='09502.jpg'>
+    <box left='115' top='228' width='76' height='72'/>
+    <box left='197' top='225' width='74' height='75'/>
+  </image>
+  <image file='09517.jpg'>
+    <box left='97' top='206' width='69' height='67'/>
+    <box left='168' top='197' width='71' height='72'/>
+  </image>
+  <image file='09528.jpg'>
+    <box left='157' top='244' width='57' height='59'/>
+    <box left='213' top='234' width='67' height='64'/>
+  </image>
+  <image file='09541.jpg'>
+    <box left='112' top='140' width='58' height='53'/>
+    <box left='173' top='140' width='55' height='53'/>
+  </image>
+  <image file='09547.jpg'>
+    <box left='108' top='182' width='75' height='73'/>
+    <box left='117' top='172' width='76' height='68'/>
+  </image>
+  <image file='09571.jpg'>
+    <box left='160' top='205' width='48' height='49'/>
+    <box left='205' top='202' width='49' height='44'/>
+  </image>
+  <image file='09611.jpg'>
+    <box left='92' top='210' width='79' height='75'/>
+    <box left='177' top='210' width='73' height='75'/>
+  </image>
+</images>
+</dataset>

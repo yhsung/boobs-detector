@@ -27,8 +27,9 @@ def train():
     # Tell the code how many CPU cores your computer has for the fastest training.
     options.num_threads = 4
     options.be_verbose = True
+    options.detection_window_size = 6400
 
-    training_xml_path = os.path.join(faces_folder, "train", "training.xml")
+    training_xml_path = os.path.join(faces_folder, "train", "training-single.xml")
 
     # This function does the actual training.  It will save the final detector to
     # detector.svm.  The input is an XML file that lists the images in the training
@@ -36,7 +37,7 @@ def train():
     # own XML files you can use the imglab tool which can be found in the
     # tools/imglab folder.  It is a simple graphical tool for labeling objects in
     # images with boxes.  To see how to use it read the tools/imglab/README.txt
-    # file.  But for this example, we just use the training.xml file included with
+    # file.  But for this example, we just use the training-paired.xml file included with
     # dlib.
     dlib.train_simple_object_detector(training_xml_path, "detector.svm", options)
 
@@ -44,8 +45,7 @@ def train():
     # it on the training data.  It will print(the precision, recall, and then)
     # average precision.
     print("")  # Print blank line to create gap from previous output
-    print("Training accuracy: {}".format(
-        dlib.test_simple_object_detector(training_xml_path, "detector.svm")))
+    print("Training accuracy: {}".format(dlib.test_simple_object_detector(training_xml_path, "detector.svm")))
 
 
 def test():
@@ -68,7 +68,6 @@ def test():
     fn = 0
     dur = 0
 
-    # test_path = os.path.join(faces_folder, "test", "*.jpg")
     test_path = "/home/external/moderation-porn-detector/boobs-oboobs/*.jpg"
 
     for f in glob.glob(test_path):
@@ -109,5 +108,78 @@ def test():
 
     print("tp={} fn={} precision={} dur={}".format(tp, fn, 1.0 * tp / (tp + fn), 1.0 * dur / (tp + fn)))
 
-train()
-test()
+
+def camera_boobs():
+    import cv2
+
+    # cam = cv2.VideoCapture(-1)
+    cam = cv2.VideoCapture("/home/nick/temp/boobs/b1.flv")
+
+    win = dlib.image_window()
+    detector = dlib.simple_object_detector("detector.svm")
+
+    def detect():
+        s, img = cam.read()
+        if not s:
+            return
+
+        img2 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+        dets = detector(img2)
+        num = len(dets)
+
+        if num > 0:
+            print("found!")
+
+        win.clear_overlay()
+        win.set_image(img2)
+        win.add_overlay(dets)
+
+    try:
+        while True:
+            detect()
+    except KeyboardInterrupt as e:
+        print("exiting")
+
+    cam.release()
+    cv2.destroyAllWindows()
+
+
+def camera_fd():
+    import cv2
+
+    cam = cv2.VideoCapture(-1)
+
+    win = dlib.image_window()
+    detector = detector = dlib.get_frontal_face_detector()
+
+    def detect():
+        s, img = cam.read()
+        if not s:
+            return
+
+        img2 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+        dets = detector(img2)
+        num = len(dets)
+
+        if num > 0:
+            print("found!")
+
+        win.clear_overlay()
+        win.set_image(img2)
+        win.add_overlay(dets)
+
+    try:
+        while True:
+            detect()
+    except KeyboardInterrupt as e:
+        print("exiting")
+
+    cam.release()
+    cv2.destroyAllWindows()
+
+# train()
+# test()
+# camera_fd()
+camera_boobs()

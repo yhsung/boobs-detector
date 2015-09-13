@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
 <?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
 <dataset>
-<name>Training faces</name>
-<comment>These are images from the PASCAL VOC 2011 dataset.</comment>
+<name>Training boobs</name>
 <images>
   <image file='09442.jpg'>
     <box left='88' top='181' width='166' height='83'/>
@@ -166,10 +165,5 @@
   <image file='08877.jpg'>
     <box left='77' top='131' width='80' height='40'/>
   </image>
-  <!--
-  <image file=''>
-    <box left='' top='' width='' height=''/>
-  </image>
-  -->
 </images>
 </dataset>
