@@ -5,7 +5,7 @@ import timeit
 import dlib
 from skimage import io
 
-faces_folder = "pics"
+faces_folder = "../pics"
 
 
 def train():
@@ -27,9 +27,11 @@ def train():
     # Tell the code how many CPU cores your computer has for the fastest training.
     options.num_threads = 4
     options.be_verbose = True
-    options.detection_window_size = 6400
+    options.detection_window_size = 1024
+    options.match_eps = 0.1
 
-    training_xml_path = os.path.join(faces_folder, "train", "training-single.xml")
+#    training_xml_path = os.path.join(faces_folder, "train", "training-single.xml")
+    training_xml_path = "/home/external/moderation-porn-detector/oboobs.dlibxml"
 
     # This function does the actual training.  It will save the final detector to
     # detector.svm.  The input is an XML file that lists the images in the training
@@ -39,20 +41,18 @@ def train():
     # images with boxes.  To see how to use it read the tools/imglab/README.txt
     # file.  But for this example, we just use the training-paired.xml file included with
     # dlib.
-    dlib.train_simple_object_detector(training_xml_path, "detector.svm", options)
+    dlib.train_simple_object_detector(training_xml_path, "../boobs.svm", options)
 
     # Now that we have a face detector we can test it.  The first statement tests
     # it on the training data.  It will print(the precision, recall, and then)
     # average precision.
-    print("")  # Print blank line to create gap from previous output
-    print("Training accuracy: {}".format(dlib.test_simple_object_detector(training_xml_path, "detector.svm")))
+    print("Training accuracy: {}".format(dlib.test_simple_object_detector(training_xml_path, "../boobs.svm")))
 
 
 def test():
     # Now let's use the detector as you would in a normal application.  First we
     # will load it from disk.
-    dlib.image_window
-    detector = dlib.simple_object_detector("detector.svm")
+    detector = dlib.simple_object_detector("../boobs.svm")
     # detector = dlib.get_frontal_face_detector()
 
     # We can look at the HOG filter we learned.  It should look like a face.  Neat!
@@ -181,6 +181,6 @@ def camera_fd():
     cv2.destroyAllWindows()
 
 # train()
-# test()
+test()
 # camera_fd()
-camera_boobs()
+# camera_boobs()
